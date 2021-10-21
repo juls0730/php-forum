@@ -1,0 +1,88 @@
+/*-start*/
+/*-Forum-CSS*/
+div.forum-div{
+  margin: 30px;
+  background-color: #ffffff;
+  opacity: 0.6;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+p.cco-text{
+  background-color: white;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+a.cco-links{
+  background: inherit;
+  background-clip: text;
+  -webkit-background-clip: text;
+  filter: invert(1) grayscale(1);
+  -webkit-filter: invert(1) grayscale(1);
+}
+
+.forum-inputs{
+  background-image: url(https://source.unsplash.com/collection/24203797/1600x900);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.frosted {
+ background-color: rgba(255, 255, 255, .15);
+ backdrop-filter: blur(10px);
+}
+
+/*-Post-CSS*/
+div.frosted-posts {
+ background-color: rgba(255, 255, 255, .25);
+ backdrop-filter: blur(3.5px);
+}
+
+div.post-div{
+  background-color: #ffffff;
+  margin: 0;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  right: 10%;
+  padding: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.post-textarea{
+  resize: none;
+  height: 500px;
+}
+
+body.post-body{
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+p.post-text{
+  text-align: left;
+}
+
+hr.post {
+	height: 2px;
+  color: #000000;
+}
+
+/*-End*/
