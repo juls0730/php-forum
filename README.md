@@ -8,7 +8,7 @@ First you have to make a database, the first row should be an id field make sure
 make a password field next make it !NULL and thats it. Next inside of connect.php put in your credentials and
 thats, next you need to make a captia, then you need to actually run the php server simple enough then you've done it!
 
-# Liscensing
+## Liscensing
 In order to use my code you have to use the GPLv3 meaning you must
 have any redistributed code opened source and link to it on the page, thanks!
 
