@@ -5,7 +5,16 @@ $id = $_GET['id'];
 if ($_SESSION["username"]) {
   if($id == null){
     header("Location: index.php");
-  } ?>
+  }
+  $idcheck = "SELECT * FROM topics WHERE topic_id = :id";
+  $querr = $pdo->prepare($idcheck);
+  $querr->bindParam(':id', $id, PDO::PARAM_STR);
+  if($querr->execute()){
+      $count = $querr->rowCount();
+      if($count == 0){
+          echo "That topic doesn't exist!";
+      }else {
+?>
 <html>
   <head>
     <title>Topics</title>
@@ -80,5 +89,7 @@ if ($_SESSION["username"]) {
   </body>
 </html>
 <?php
+      }
+    }
 } else {header("Location: login.php");}
 ?>
